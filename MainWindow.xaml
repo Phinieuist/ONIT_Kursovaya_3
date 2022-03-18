@@ -1,0 +1,51 @@
+﻿<Window x:Class="ONIT_Kurs_3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ONIT_Kurs_3"
+        mc:Ignorable="d"
+        Title="ОНИТ Курсовая 3 задание" Height="758.792" Width="1040.411">
+    <Grid>
+        <DataGrid x:Name="DataGrid" IsReadOnly="True" HorizontalAlignment="Left" Height="404" Margin="10,186,0,0" VerticalAlignment="Top" Width="1001"/>
+        <GroupBox Header="Таблицы" HorizontalAlignment="Left" Height="136" Margin="10,10,0,0" VerticalAlignment="Top" Width="1001">
+            <Grid>
+                <Button x:Name="BtnCategories" Content="Categories" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="158" Height="42" Click="BtnCategories_Click"/>
+                <Button x:Name="BtnOrderDetails" Content="OrderDetails" HorizontalAlignment="Left" Margin="825,10,0,0" VerticalAlignment="Top" Width="158" Height="42" Click="BtnOrderDetails_Click"/>
+                <Button x:Name="BtnEmployeeTerritories" Content="EmployeeTerritories" HorizontalAlignment="Left" Margin="662,10,0,0" VerticalAlignment="Top" Width="158" Height="42" Click="BtnEmployeeTerritories_Click"/>
+                <Button x:Name="BtnEmployees" Content="Employees" HorizontalAlignment="Left" Margin="499,10,0,0" VerticalAlignment="Top" Width="158" Height="42" Click="BtnEmployees_Click"/>
+                <Button x:Name="BtnCustomers" Content="Customers" HorizontalAlignment="Left" Margin="336,10,0,0" VerticalAlignment="Top" Width="158" Height="42" Click="BtnCustomers_Click"/>
+                <Button x:Name="BtnCustomerDemographics" Content="CustomerDemographics" HorizontalAlignment="Left" Margin="173,10,0,0" VerticalAlignment="Top" Width="158" Height="42" Click="BtnCustomerDemographics_Click"/>
+                <Button x:Name="BtnTerritories" Content="Territories" HorizontalAlignment="Left" Margin="825,61,0,0" VerticalAlignment="Top" Width="158" Height="42" Click="BtnTerritories_Click"/>
+                <Button x:Name="BtnSuppliers" Content="Suppliers" HorizontalAlignment="Left" Margin="662,61,0,0" VerticalAlignment="Top" Width="158" Height="42" Click="BtnSuppliers_Click"/>
+                <Button x:Name="BtnShippers" Content="Shippers" HorizontalAlignment="Left" Margin="499,61,0,0" VerticalAlignment="Top" Width="158" Height="42" Click="BtnShippers_Click"/>
+                <Button x:Name="BtnRegion" Content="Region" HorizontalAlignment="Left" Margin="336,61,0,0" VerticalAlignment="Top" Width="158" Height="42" Click="BtnRegion_Click"/>
+                <Button x:Name="BtnProducts" Content="Products" HorizontalAlignment="Left" Margin="173,61,0,0" VerticalAlignment="Top" Width="158" Height="42" Click="BtnProducts_Click"/>
+                <Button x:Name="BtnOrders" Content="Orders" HorizontalAlignment="Left" Margin="10,61,0,0" VerticalAlignment="Top" Width="158" Height="42" Click="BtnOrders_Click"/>
+            </Grid>
+        </GroupBox>
+        <Label x:Name="Label1" Content="" HorizontalAlignment="Left" Height="30" Margin="10,151,0,0" VerticalAlignment="Top" Width="1001" FontSize="14"/>
+        <GroupBox Header="Экспорт таблиц" HorizontalAlignment="Left" Height="115" Margin="10,595,0,0" VerticalAlignment="Top" Width="1001">
+            <Grid>
+                <Label Content="Таблица" HorizontalAlignment="Left" Height="30" Margin="10,10,0,0" VerticalAlignment="Top" Width="67" FontSize="14"/>
+                <ComboBox x:Name="TableComboBox" HorizontalAlignment="Left" Height="30" Margin="82,10,0,0" VerticalAlignment="Top" Width="390" IsReadOnly="True" SelectedIndex="0">
+                    <ListBoxItem Content="Categories"/>
+                    <ListBoxItem Content="OrderDetails"/>
+                    <ListBoxItem Content="EmployeeTerritories"/>
+                    <ListBoxItem Content="Employees"/>
+                    <ListBoxItem Content="Customers"/>
+                    <ListBoxItem Content="CustomerDemographics"/>
+                    <ListBoxItem Content="Territories"/>
+                    <ListBoxItem Content="Suppliers"/>
+                    <ListBoxItem Content="Shippers"/>
+                    <ListBoxItem Content="Region"/>
+                    <ListBoxItem Content="Products"/>
+                    <ListBoxItem Content="Orders"/>
+                </ComboBox>
+                <Button x:Name="BtnExcel" Content="Экспортировать таблицу в Excel" HorizontalAlignment="Left" Height="30" Margin="639,10,0,0" VerticalAlignment="Top" Width="340" Click="BtnExcel_Click"/>
+                <Button x:Name="BtnWord" Content="Экспортировать таблицу в Word" HorizontalAlignment="Left" Height="30" Margin="639,52,0,0" VerticalAlignment="Top" Width="340" Click="BtnWord_Click"/>
+            </Grid>
+        </GroupBox>
+
+    </Grid>
+</Window>
